@@ -75,7 +75,7 @@ body nav a {
 	padding: 30px;
 	box-sizing: border-box;
 	border: none;
-	margin: 30px;
+	margin: 30px 0px;
 	margin-top: 40px;
 }
 
@@ -271,32 +271,43 @@ footer{
 
   }
 
-  @media only screen and (max-width: 600px) {
-    nav a.vertical {
-        display: block;
-        width: 100%;
-        color: gray;
-        padding: 20px 16px;
-        text-decoration: none;
-        font-size: 20px;
-        border-bottom: 1px solid gray;
-        margin: none;
-        text-align: center;
-      }
-    nav {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
+  @media only screen and (max-width: 500px) {
+	.menu {
+		
+		overflow: hidden;
+		color: white;
+	}
+	.menu a {
+		float: left;
+		display: block;
+		width: 100%;
+		color: black;
+		border-bottom: 1px solid black;
+		text-align: center;
+		padding: 0px 20px;
+		text-decoration: none;
+		font-size: 20px;
+		margin: 10px 0;
+	}
+	.menu a.menu1 {
+		border-top: 1px solid black;
+		padding-top: 20px;
+		padding-bottom: 40px;
+	}
+	.top-logo {
+		background-color: white;
+	}
     .top, .bottom {
         display: flex;
         flex-wrap: wrap;
     }
     .coltop p {
-        width: 500px;
+        width: 400px;
     }
     .colbot p {
-        width: 500px;
-    }
+        width: 400px;
+	}
+	.contact h2, p {
+		margin: 10px 0;
+	}
   }
